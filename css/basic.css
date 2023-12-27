@@ -29,8 +29,11 @@ body{
 .flipbook-viewport .flipbook{
 	width:922px;
 	height:600px;
-	left:-461px;
-	top:-300px;
+	/* left:-461px;
+	top:-300px; */
+
+	left: -750px;
+    top: -450px;
 }
 
 .flipbook-viewport .page{
