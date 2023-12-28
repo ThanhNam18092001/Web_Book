@@ -51,19 +51,23 @@
 				autoCenter: true,
 			};
 
-			if (screen.width <= 1550) {
-				bookSize.width = (screen.height * 0.81) + (screen.height * 0.29) + (screen.height * 0.45);
+			if (screen.width >= 1140 && screen.width <= 1400) {
+				bookSize.width = screen.height * 0.81 + screen.height * 0.29 + screen.height * 0.45;
 				bookSize.height = screen.height * 0.81;
-			}
-			else if (1550 <= screen.width <= 1700) {
+				console.log('1400', screen.width);
+			} else if (screen.width >= 1400 && screen.width <= 1550) {
+				bookSize.width = screen.height * 0.81 + screen.height * 0.29 + screen.height * 0.45;
+				bookSize.height = screen.height * 0.81;
+				console.log('1550', screen.width);
+			} else if (screen.width >= 1551 && screen.width <= 1700) {
 				bookSize.width = screen.width * 0.85;
 				bookSize.height = screen.height * 0.89;
-			}
-			else if (1700 <= screen.width <= 1920) {
+				console.log('1700', screen.width);
+			} else if (screen.width >= 1700 && screen.width <= 1920) {
 				bookSize.width = screen.width * 0.8;
 				bookSize.height = screen.height * 0.89;
+				console.log('1920', screen.width);
 			}
-
 
 			$('.flipbook').turn(bookSize);
 		}
