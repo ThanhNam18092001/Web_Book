@@ -52,23 +52,39 @@
 			};
 
 			if (screen.width >= 1140 && screen.width <= 1400) {
+
 				bookSize.width = screen.height * 0.81 + screen.height * 0.29 + screen.height * 0.45;
-				bookSize.height = screen.height * 0.81;
-				console.log('1400', screen.width);
+				bookSize.height = screen.height;
+
+				console.log('1400 width', screen.width);
+				console.log('1400 height', screen.height + ' ' + screen.height * 0.81);
+
 			} else if (screen.width >= 1400 && screen.width <= 1550) {
+
 				bookSize.width = screen.height * 0.81 + screen.height * 0.29 + screen.height * 0.45;
 				bookSize.height = screen.height * 0.81;
-				console.log('1550', screen.width);
+
+				console.log('1550 width', screen.width);
+				console.log('1550 height', screen.height + ' ' + screen.height * 0.81);
+
 			} else if (screen.width >= 1551 && screen.width <= 1700) {
+
 				bookSize.width = screen.width * 0.85;
 				bookSize.height = screen.height;
+
 				// bookSize.height = screen.height * 0.89;
-				console.log('1700', screen.width);
+				console.log('1700 width', screen.width);
+				console.log('1700 height', screen.height + ' ' + screen.height);
+
 			} else if (screen.width >= 1700 && screen.width <= 1920) {
+
 				bookSize.width = screen.width * 0.8;
 				// bookSize.height = screen.height;
 				bookSize.height = screen.height * 0.89;
-				console.log('1920', screen.width);
+
+				console.log('1920 width', screen.width);
+				console.log('1920 height', screen.height + ' ' + screen.height * 0.89);
+
 			}
 
 			$('.flipbook').turn(bookSize);
