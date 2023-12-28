@@ -69,16 +69,20 @@
 
 			}
 			else if (screen.width >= 1441 && screen.width <= 1550) {
+				console.log(2);
 				// acer 15inch
 				bookSize.width = screen.height * 0.81 + screen.height * 0.29 + screen.height * 0.45;
 				bookSize.height = screen.height * 0.81;
 				bookSize.left = -650;
 
 			} else if (screen.width >= 1551 && screen.width <= 1700) {
-
+				//
+				console.log("screen.height", screen.height);
+				console.log("resize", -(screen.height*0.34));
 				bookSize.width = screen.width * 0.85;
-				bookSize.height = screen.height;
-				bookSize.left = -650;
+				bookSize.height = screen.height*0.88;
+				bookSize.top = -(screen.height*0.44);
+				bookSize.left = -(screen.height*0.68);
 
 			} else if (screen.width >= 1700 && screen.width <= 1920) {
 				// Quỳnh
