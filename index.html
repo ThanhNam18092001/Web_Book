@@ -42,6 +42,8 @@
 			var width1 = screen.width * 0.62
 			var width = (screen.height * 0.81) + (screen.height * 0.29) + (screen.height * 0.45)
 			var height = screen.height * 0.81
+			var top = -353 
+			var left = -100
 
 			var bookSize = {
 				width: width,
@@ -49,6 +51,8 @@
 				elevation: 50,
 				gradients: true,
 				autoCenter: true,
+				top: top,
+				left: left
 			};
 
 			if (screen.width >= 1140 && screen.width <= 1200) {
@@ -56,43 +60,32 @@
 				bookSize.width = screen.height * 0.81 + screen.height * 0.29 + screen.height * 0.45;
 				bookSize.height = screen.height;
 
-				console.log('1200 width', screen.width);
-				console.log('1200 height', screen.height + ' ' + screen.height);
-
 			} else if (screen.width >= 1201 && screen.width <= 1440) {
 				//Mac Pro 13in
-				bookSize.width = screen.height * 0.81 + screen.height * 0.29 + screen.height * 0.33;
+				bookSize.width = screen.height * 0.81 + screen.height * 0.29 + screen.height * 0.2;
 				bookSize.height = screen.height * 0.77;
-				console.log('1440 width', screen.width);
-				console.log('1440 height', screen.height + ' ' + screen.height * 0.77);
+				bookSize.top = -400;
+				bookSize.left = -650;
 
 			}
 			else if (screen.width >= 1441 && screen.width <= 1550) {
 				// acer 15inch
 				bookSize.width = screen.height * 0.81 + screen.height * 0.29 + screen.height * 0.45;
 				bookSize.height = screen.height * 0.81;
-				// bookSize.height = screen.height;
-
-				console.log('1550 width', screen.width);
-				console.log('1550 height', screen.height + ' ' + screen.height);
+				bookSize.left = -650;
 
 			} else if (screen.width >= 1551 && screen.width <= 1700) {
 
 				bookSize.width = screen.width * 0.85;
 				bookSize.height = screen.height;
-
-				// bookSize.height = screen.height * 0.89;
-				console.log('1700 width', screen.width);
-				console.log('1700 height', screen.height + ' ' + screen.height);
+				bookSize.left = -650;
 
 			} else if (screen.width >= 1700 && screen.width <= 1920) {
 				// Quỳnh
 				bookSize.width = screen.width * 0.8;
-				// bookSize.height = screen.height;
 				bookSize.height = screen.height * 0.89;
-
-				console.log('1920 width', screen.width);
-				console.log('1920 height', screen.height + ' ' + screen.height);
+				bookSize.left = -720;
+				bookSize.top = -480;
 
 			}
 

@@ -157,7 +157,7 @@ turnMethods = {
 
     // Set the css
 
-    this.css({position: 'relative', width: options.width, height: options.height});
+    this.css({position: 'relative', width: options.width, height: options.height, top: options.top, left: options.left});
 
     // Set the initial display
 
