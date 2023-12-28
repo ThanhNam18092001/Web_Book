@@ -32,9 +32,10 @@ body{
 	/* left:-461px;
 	top:-300px; */
 
-	left: -31.5rem;
+	/* left: -31.5rem; */
     /* top: -21rem; */
-	top: -48vh;
+	left: -45rem;
+	top: -50.5vh;
 }
 
 .flipbook-viewport .page{

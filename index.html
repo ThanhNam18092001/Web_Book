@@ -37,8 +37,12 @@
 function loadApp() {
 
 	// Create the flipbook
-	var width = screen.width * 0.62
-	var height = screen.height * 0.78
+	var width1 = screen.width * 0.62
+	// var height = screen.height * 0.78
+	console.log(width1);
+	var width = (screen.height * 0.81) + (screen.height * 0.29) + (screen.height * 0.58)
+	var height = screen.height * 0.81
+	console.log('height', height +' + '+ width);
 	$('.flipbook').turn({
 			// Width
 
@@ -47,7 +51,7 @@ function loadApp() {
 			
 			// Height
 
-			height:height,
+			height: height,
 
 			// Elevation
 
