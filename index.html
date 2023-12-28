@@ -36,36 +36,30 @@
 
 function loadApp() {
 
-	// Create the flipbook
 	var width1 = screen.width * 0.62
-	// var height = screen.height * 0.78
-	console.log(width1);
-	var width = (screen.height * 0.81) + (screen.height * 0.29) + (screen.height * 0.58)
+	var width = (screen.height * 0.81) + (screen.height * 0.29) + (screen.height * 0.45)
 	var height = screen.height * 0.81
-	console.log('height', height +' + '+ width);
-	$('.flipbook').turn({
-			// Width
 
-			// width:922,
-			width: width,
-			
-			// Height
+	var bookSize = {
+		width: width,
+		height: height,
+		elevation: 50,
+		gradients: true,
+		autoCenter: true,
+	};
 
-			height: height,
+	if (screen.width <= 1560){
+		bookSize.width = (screen.height * 0.81) + (screen.height * 0.29) + (screen.height * 0.45)
+		bookSize.height = screen.height * 0.81
+	} else if (screen.width <= 1920) {
+		bookSize.width = (screen.height * 0.81) + (screen.height * 0.29) + (screen.height * 0.45)
+		bookSize.height = screen.height
+	} else if (screen.width <= 1366) {
+		bookSize.width = (screen.height * 0.81) + (screen.height * 0.29) + (screen.height * 0.45)
+		bookSize.height = screen.height
+	}
 
-			// Elevation
-
-			elevation: 50,
-			
-			// Enable gradients
-
-			gradients: true,
-			
-			// Auto center this flipbook
-
-			autoCenter: true
-
-	});
+	$('.flipbook').turn(bookSize);
 }
 
 // Load the HTML4 version if there's not CSS transform

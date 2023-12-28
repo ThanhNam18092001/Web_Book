@@ -34,8 +34,9 @@ body{
 
 	/* left: -31.5rem; */
     /* top: -21rem; */
-	left: -45rem;
-	top: -50.5vh;
+	left: -44vw;
+	top: -50vh;
+	transform: translate(-4.5%, 0%);
 }
 
 .flipbook-viewport .page{
